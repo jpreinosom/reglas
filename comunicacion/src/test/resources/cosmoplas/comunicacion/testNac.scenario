@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>codBodega</name>
-          <value>7</value>
+          <value>08</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -16,17 +16,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
+      <executionTimeResult>2</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>respJust</fieldName>
-          <expected>true</expected>
-          <actualResult>false</actualResult>
+          <expected>false</expected>
+          <actualResult>true</actualResult>
           <successResult>false</successResult>
-          <explanation>[d] field [respJust] was [false] expected [true].</explanation>
+          <explanation>[d] field [respJust] was [true] expected [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -35,7 +35,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-11-08 18:46:50.242 UTC</lastRunResult>
+  <lastRunResult>2016-11-08 18:48:44.173 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>cosmoplas.comunicacion</packageName>
