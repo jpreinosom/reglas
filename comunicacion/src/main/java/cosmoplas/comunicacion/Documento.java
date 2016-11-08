@@ -9,26 +9,24 @@ public class Documento implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "idDocumento")
+   @org.kie.api.definition.type.Label("idDocumento")
    private java.lang.Integer idDocumento;
-   @org.kie.api.definition.type.Label(value = "codBodega")
+   @org.kie.api.definition.type.Label("codBodega")
    private java.lang.String codBodega;
-   @org.kie.api.definition.type.Label(value = "idDespacho")
+   @org.kie.api.definition.type.Label("idDespacho")
    private java.lang.String idDespacho;
-   @org.kie.api.definition.type.Label(value = "fechaDespecho")
+   @org.kie.api.definition.type.Label("fechaDespecho")
    private java.util.Date fechaDespecho;
-   @org.kie.api.definition.type.Label(value = "montoReservado")
+   @org.kie.api.definition.type.Label("montoReservado")
    private java.lang.Integer montoReservado;
-   @org.kie.api.definition.type.Label(value = "esKit")
+   @org.kie.api.definition.type.Label("esKit")
    private java.lang.Boolean esKit;
-   @org.kie.api.definition.type.Label(value = "stock")
+   @org.kie.api.definition.type.Label("stock")
    private java.lang.Integer stock;
-   @org.kie.api.definition.type.Label(value = "tipoNota")
+   @org.kie.api.definition.type.Label("tipoNota")
    private java.lang.String tipoNota;
-   @org.kie.api.definition.type.Label(value = "bRespJust")
-   private java.lang.Boolean bRespJust;
-   @org.kie.api.definition.type.Label(value = "bRespBus")
-   private java.lang.Boolean bRespBus;
+   @org.kie.api.definition.type.Label(value = "respJust")
+   private java.lang.Boolean respJust;
 
    public Documento()
    {
@@ -114,31 +112,21 @@ public class Documento implements java.io.Serializable
       this.tipoNota = tipoNota;
    }
 
-   public java.lang.Boolean getbRespJust()
+   public java.lang.Boolean getRespJust()
    {
-      return this.bRespJust;
+      return this.respJust;
    }
 
-   public void setbRespJust(java.lang.Boolean bRespJust)
+   public void setRespJust(java.lang.Boolean respJust)
    {
-      this.bRespJust = bRespJust;
-   }
-
-   public java.lang.Boolean getbRespBus()
-   {
-      return this.bRespBus;
-   }
-
-   public void setbRespBus(java.lang.Boolean bRespBus)
-   {
-      this.bRespBus = bRespBus;
+      this.respJust = respJust;
    }
 
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
          java.lang.String idDespacho, java.util.Date fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
          java.lang.Integer stock, java.lang.String tipoNota,
-         java.lang.Boolean bRespJust, java.lang.Boolean bRespBus)
+         java.lang.Boolean respJust)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -148,8 +136,7 @@ public class Documento implements java.io.Serializable
       this.esKit = esKit;
       this.stock = stock;
       this.tipoNota = tipoNota;
-      this.bRespJust = bRespJust;
-      this.bRespBus = bRespBus;
+      this.respJust = respJust;
    }
 
 }
