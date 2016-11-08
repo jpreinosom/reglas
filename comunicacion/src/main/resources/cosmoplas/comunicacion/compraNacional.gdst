@@ -147,9 +147,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>7</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
+        <isOtherwise>true</isOtherwise>
       </value>
       <value>
         <valueBoolean>false</valueBoolean>
