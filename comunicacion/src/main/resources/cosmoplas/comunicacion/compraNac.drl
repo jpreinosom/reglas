@@ -1,7 +1,7 @@
 package cosmoplas.comunicacion;
 
 //from row number: 1
-rule "Row 1 CompraNacional"
+rule "Row 1 CompraNac"
 	dialect "mvel"
 	when
 		f1 : Documento( codBodega == "08" )
@@ -10,7 +10,7 @@ rule "Row 1 CompraNacional"
 end
 
 //from row number: 2
-rule "Row 2 CompraNacional"
+rule "Row 2 CompraNac"
 	dialect "mvel"
 	when
 		f1 : Documento( codBodega == "15" )
@@ -19,9 +19,10 @@ rule "Row 2 CompraNacional"
 end
 
 //from row number: 3
-rule "Row 3 CompraNacional"
+rule "Row 3 CompraNac"
 	dialect "mvel"
-	when
+	when 
+	    f1 : Documento( codBodega == "17" )
 	then
 		f1.setBRespJust( false );
 end
