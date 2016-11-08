@@ -16,7 +16,7 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("idDespacho")
    private java.lang.String idDespacho;
    @org.kie.api.definition.type.Label("fechaDespecho")
-   private java.util.Date fechaDespecho;
+   private Integer fechaDespecho;
    @org.kie.api.definition.type.Label("montoReservado")
    private java.lang.Integer montoReservado;
    @org.kie.api.definition.type.Label("esKit")
@@ -31,8 +31,8 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("respBus")
    private java.lang.Boolean respBus;
 
-   @org.kie.api.definition.type.Label(value = "fechaHoy")
-   private java.util.Date fechaHoy;
+   @org.kie.api.definition.type.Label("fechaHoy")
+   private Integer fechaHoy;
 
    public Documento()
    {
@@ -66,16 +66,6 @@ public class Documento implements java.io.Serializable
    public void setIdDespacho(java.lang.String idDespacho)
    {
       this.idDespacho = idDespacho;
-   }
-
-   public java.util.Date getFechaDespecho()
-   {
-      return this.fechaDespecho;
-   }
-
-   public void setFechaDespecho(java.util.Date fechaDespecho)
-   {
-      this.fechaDespecho = fechaDespecho;
    }
 
    public java.lang.Integer getMontoReservado()
@@ -138,22 +128,32 @@ public class Documento implements java.io.Serializable
       this.respBus = respBus;
    }
 
-   public java.util.Date getFechaHoy()
+   public java.lang.Integer getFechaDespecho()
+   {
+      return this.fechaDespecho;
+   }
+
+   public void setFechaDespecho(java.lang.Integer fechaDespecho)
+   {
+      this.fechaDespecho = fechaDespecho;
+   }
+
+   public java.lang.Integer getFechaHoy()
    {
       return this.fechaHoy;
    }
 
-   public void setFechaHoy(java.util.Date fechaHoy)
+   public void setFechaHoy(java.lang.Integer fechaHoy)
    {
       this.fechaHoy = fechaHoy;
    }
 
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
-         java.lang.String idDespacho, java.util.Date fechaDespecho,
+         java.lang.String idDespacho, java.lang.Integer fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
          java.lang.Integer stock, java.lang.String tipoNota,
          java.lang.Boolean respJust, java.lang.Boolean respBus,
-         java.util.Date fechaHoy)
+         java.lang.Integer fechaHoy)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
