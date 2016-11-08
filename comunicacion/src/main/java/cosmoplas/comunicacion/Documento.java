@@ -28,8 +28,11 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("respJust")
    private java.lang.Boolean respJust;
 
-   @org.kie.api.definition.type.Label(value = "respBus")
+   @org.kie.api.definition.type.Label("respBus")
    private java.lang.Boolean respBus;
+
+   @org.kie.api.definition.type.Label(value = "fechaHoy")
+   private java.util.Date fechaHoy;
 
    public Documento()
    {
@@ -135,11 +138,22 @@ public class Documento implements java.io.Serializable
       this.respBus = respBus;
    }
 
+   public java.util.Date getFechaHoy()
+   {
+      return this.fechaHoy;
+   }
+
+   public void setFechaHoy(java.util.Date fechaHoy)
+   {
+      this.fechaHoy = fechaHoy;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
          java.lang.String idDespacho, java.util.Date fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
          java.lang.Integer stock, java.lang.String tipoNota,
-         java.lang.Boolean respJust, java.lang.Boolean respBus)
+         java.lang.Boolean respJust, java.lang.Boolean respBus,
+         java.util.Date fechaHoy)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -151,6 +165,7 @@ public class Documento implements java.io.Serializable
       this.tipoNota = tipoNota;
       this.respJust = respJust;
       this.respBus = respBus;
+      this.fechaHoy = fechaHoy;
    }
 
 }
