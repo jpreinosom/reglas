@@ -25,8 +25,11 @@ public class Documento implements java.io.Serializable
    private java.lang.Integer stock;
    @org.kie.api.definition.type.Label("tipoNota")
    private java.lang.String tipoNota;
-   @org.kie.api.definition.type.Label(value = "respJust")
+   @org.kie.api.definition.type.Label("respJust")
    private java.lang.Boolean respJust;
+
+   @org.kie.api.definition.type.Label(value = "respBus")
+   private java.lang.Boolean respBus;
 
    public Documento()
    {
@@ -122,11 +125,21 @@ public class Documento implements java.io.Serializable
       this.respJust = respJust;
    }
 
+   public java.lang.Boolean getRespBus()
+   {
+      return this.respBus;
+   }
+
+   public void setRespBus(java.lang.Boolean respBus)
+   {
+      this.respBus = respBus;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
          java.lang.String idDespacho, java.util.Date fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
          java.lang.Integer stock, java.lang.String tipoNota,
-         java.lang.Boolean respJust)
+         java.lang.Boolean respJust, java.lang.Boolean respBus)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -137,6 +150,7 @@ public class Documento implements java.io.Serializable
       this.stock = stock;
       this.tipoNota = tipoNota;
       this.respJust = respJust;
+      this.respBus = respBus;
    }
 
 }
