@@ -1,1 +1,5 @@
-<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="set1" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion" includes="base1">
+    <ksession name="session1" type="stateless" default="true" clockType="realtime"/>
+  </kbase>
+</kmodule>

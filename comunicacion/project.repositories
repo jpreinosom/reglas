@@ -11,8 +11,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>java-net-public</id>
-        <url>https://maven.java.net/content/groups/public/</url>
+        <id>jboss-public-repository</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -27,16 +27,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>fusesource</id>
-        <url>http://repo.fusesource.com/nexus/content/groups/release/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>redhat-techpreview-all-repository3</id>
-        <url>http://maven.repository.redhat.com/techpreview/all/</url>
+        <id>com-springsource-repository-bundles-external</id>
+        <url>http://repository.springsource.com/maven/bundles/external/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -44,15 +36,15 @@
       <include>true</include>
       <metadata>
         <id>jboss-public-repository</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <url>http://repository.jboss.org/nexus/content/repositories/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>redhat-techpreview-all-repository4</id>
-        <url>http://maven.repository.redhat.com/techpreview/all/</url>
+        <id>repository-apache-org</id>
+        <url>https://repository.apache.org/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -67,32 +59,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>repository-apache-org</id>
-        <url>https://repository.apache.org/content/groups/public/</url>
-        <source>SETTINGS</source>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-ga-plugin-repository</id>
-        <url>http://maven.repository.redhat.com/techpreview/all</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local</id>
-        <url>/home/jpreinosom/.m2/repository</url>
-        <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-public-repository</id>
-        <url>http://repository.jboss.org/nexus/content/repositories/public/</url>
+        <id>fusesource</id>
+        <url>http://repo.fusesource.com/nexus/content/groups/release/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -107,16 +83,40 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
+        <id>redhat-techpreview-all-repository4</id>
+        <url>http://maven.repository.redhat.com/techpreview/all/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>com-springsource-repository-bundles-external</id>
-        <url>http://repository.springsource.com/maven/bundles/external/</url>
+        <id>java-net-public</id>
+        <url>https://maven.java.net/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>redhat-techpreview-all-repository3</id>
+        <url>http://maven.repository.redhat.com/techpreview/all/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>/home/jpreinosom/.m2/repository</url>
+        <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-ga-plugin-repository</id>
+        <url>http://maven.repository.redhat.com/techpreview/all</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
