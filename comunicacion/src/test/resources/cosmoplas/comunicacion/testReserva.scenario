@@ -8,12 +8,12 @@
       <fieldData>
         <field-data>
           <name>fechaDespecho</name>
-          <value>15</value>
+          <value>1</value>
           <nature>4</nature>
         </field-data>
         <field-data>
           <name>fechaHoy</name>
-          <value>14</value>
+          <value>2</value>
           <nature>4</nature>
         </field-data>
         <field-data>
@@ -34,6 +34,9 @@
         <expect-field>
           <fieldName>respJust</fieldName>
           <expected>true</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[d] field [respJust] was [] expected [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -42,7 +45,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-11-09 13:19:40.376 UTC</lastRunResult>
+  <lastRunResult>2016-11-09 13:24:51.549 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>cosmoplas.comunicacion</packageName>
