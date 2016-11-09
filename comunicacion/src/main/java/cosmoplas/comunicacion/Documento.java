@@ -34,6 +34,9 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("fechaHoy")
    private Integer fechaHoy;
 
+   @org.kie.api.definition.type.Label(value = "diferenciaFecha")
+   private java.lang.Integer diferenciaFecha;
+
    public Documento()
    {
    }
@@ -148,12 +151,22 @@ public class Documento implements java.io.Serializable
       this.fechaHoy = fechaHoy;
    }
 
+   public java.lang.Integer getDiferenciaFecha()
+   {
+      return this.diferenciaFecha;
+   }
+
+   public void setDiferenciaFecha(java.lang.Integer diferenciaFecha)
+   {
+      this.diferenciaFecha = diferenciaFecha;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
          java.lang.String idDespacho, java.lang.Integer fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
          java.lang.Integer stock, java.lang.String tipoNota,
          java.lang.Boolean respJust, java.lang.Boolean respBus,
-         java.lang.Integer fechaHoy)
+         java.lang.Integer fechaHoy, java.lang.Integer diferenciaFecha)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -166,6 +179,7 @@ public class Documento implements java.io.Serializable
       this.respJust = respJust;
       this.respBus = respBus;
       this.fechaHoy = fechaHoy;
+      this.diferenciaFecha = diferenciaFecha;
    }
 
 }
