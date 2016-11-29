@@ -433,7 +433,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Error Entrega Programada</valueString>
+        <valueString>Error Entrega</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
