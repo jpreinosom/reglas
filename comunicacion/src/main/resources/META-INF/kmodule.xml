@@ -2,6 +2,7 @@
   <kbase name="base3" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.venta.puntaarena.*, cosmoplas.comunicacion.Documento">
     <ksession name="session3" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="base4" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.venta.nvl.*, cosmoplas.comunicacion.Documento"/>
   <kbase name="base1" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.*">
     <ksession name="session1" type="stateless" default="false" clockType="realtime"/>
   </kbase>
