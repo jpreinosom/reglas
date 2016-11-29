@@ -61,11 +61,27 @@
           <operator>&lt;=</operator>
           <parameters/>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_INTEGER</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>valor neto mayor que</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>valorNeto</factField>
+          <fieldType>Integer</fieldType>
+          <operator>&gt;</operator>
+          <parameters/>
+        </condition-column52>
       </conditions>
       <window>
         <operator></operator>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
@@ -184,6 +200,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Error Valor</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -221,6 +242,11 @@
       <value>
         <valueString>85</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -269,6 +295,12 @@
         <isOtherwise>true</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">100000</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
