@@ -63,11 +63,11 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("tipoPedido")
    private java.lang.Integer tipoPedido;
 
-   @org.kie.api.definition.type.Label("sTipoPedido")
-   private java.lang.String sTipoPedido;
-
-   @org.kie.api.definition.type.Label(value = "valorNeto")
+   @org.kie.api.definition.type.Label("valorNeto")
    private java.lang.Integer valorNeto;
+
+   @org.kie.api.definition.type.Label(value = "descTipoPedido")
+   private java.lang.String descTipoPedido;
 
    public Documento()
    {
@@ -273,16 +273,6 @@ public class Documento implements java.io.Serializable
       this.tipoPedido = tipoPedido;
    }
 
-   public java.lang.String getsTipoPedido()
-   {
-      return this.sTipoPedido;
-   }
-
-   public void setsTipoPedido(java.lang.String sTipoPedido)
-   {
-      this.sTipoPedido = sTipoPedido;
-   }
-
    public java.lang.Integer getValorNeto()
    {
       return this.valorNeto;
@@ -291,6 +281,16 @@ public class Documento implements java.io.Serializable
    public void setValorNeto(java.lang.Integer valorNeto)
    {
       this.valorNeto = valorNeto;
+   }
+
+   public java.lang.String getDescTipoPedido()
+   {
+      return this.descTipoPedido;
+   }
+
+   public void setDescTipoPedido(java.lang.String descTipoPedido)
+   {
+      this.descTipoPedido = descTipoPedido;
    }
 
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
@@ -303,7 +303,7 @@ public class Documento implements java.io.Serializable
          java.lang.String adicional32, java.lang.String mensajeError,
          java.lang.Integer idLista, java.lang.Integer idTipoProducto,
          java.util.Date fechaEmision, java.lang.Integer tipoPedido,
-         java.lang.String sTipoPedido, java.lang.Integer valorNeto)
+         java.lang.Integer valorNeto, java.lang.String descTipoPedido)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -325,8 +325,8 @@ public class Documento implements java.io.Serializable
       this.idTipoProducto = idTipoProducto;
       this.fechaEmision = fechaEmision;
       this.tipoPedido = tipoPedido;
-      this.sTipoPedido = sTipoPedido;
       this.valorNeto = valorNeto;
+      this.descTipoPedido = descTipoPedido;
    }
 
 }
