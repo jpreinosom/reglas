@@ -54,11 +54,11 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>valor neto mayor a </header>
+          <header>valor neto menor a </header>
           <constraintValueType>1</constraintValueType>
           <factField>valorNeto</factField>
           <fieldType>Integer</fieldType>
-          <operator>&gt;=</operator>
+          <operator>&lt;=</operator>
           <parameters/>
         </condition-column52>
       </conditions>
