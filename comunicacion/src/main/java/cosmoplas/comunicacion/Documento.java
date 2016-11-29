@@ -60,11 +60,14 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("fechaEmision")
    private java.util.Date fechaEmision;
 
-   @org.kie.api.definition.type.Label(value = "tipoPedido")
+   @org.kie.api.definition.type.Label("tipoPedido")
    private java.lang.Integer tipoPedido;
 
-   @org.kie.api.definition.type.Label(value = "sTipoPedido")
+   @org.kie.api.definition.type.Label("sTipoPedido")
    private java.lang.String sTipoPedido;
+
+   @org.kie.api.definition.type.Label(value = "valorNeto")
+   private java.lang.Integer valorNeto;
 
    public Documento()
    {
@@ -280,6 +283,16 @@ public class Documento implements java.io.Serializable
       this.sTipoPedido = sTipoPedido;
    }
 
+   public java.lang.Integer getValorNeto()
+   {
+      return this.valorNeto;
+   }
+
+   public void setValorNeto(java.lang.Integer valorNeto)
+   {
+      this.valorNeto = valorNeto;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
          java.lang.String idDespacho, java.util.Date fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
@@ -290,7 +303,7 @@ public class Documento implements java.io.Serializable
          java.lang.String adicional32, java.lang.String mensajeError,
          java.lang.Integer idLista, java.lang.Integer idTipoProducto,
          java.util.Date fechaEmision, java.lang.Integer tipoPedido,
-         java.lang.String sTipoPedido)
+         java.lang.String sTipoPedido, java.lang.Integer valorNeto)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -313,6 +326,7 @@ public class Documento implements java.io.Serializable
       this.fechaEmision = fechaEmision;
       this.tipoPedido = tipoPedido;
       this.sTipoPedido = sTipoPedido;
+      this.valorNeto = valorNeto;
    }
 
 }
