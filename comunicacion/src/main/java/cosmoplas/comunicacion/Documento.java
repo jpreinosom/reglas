@@ -39,26 +39,32 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("diferenciaFecha")
    private java.lang.Integer diferenciaFecha;
 
-   @org.kie.api.definition.type.Label(value = "tipoPago")
+   @org.kie.api.definition.type.Label("tipoPago")
    private java.lang.Integer tipoPago;
 
-   @org.kie.api.definition.type.Label(value = "adicional4")
+   @org.kie.api.definition.type.Label("adicional4")
    private java.lang.String adicional4;
 
-   @org.kie.api.definition.type.Label(value = "adicional32")
+   @org.kie.api.definition.type.Label("adicional32")
    private java.lang.String adicional32;
 
-   @org.kie.api.definition.type.Label(value = "mensajeError")
+   @org.kie.api.definition.type.Label("mensajeError")
    private java.lang.String mensajeError;
 
-   @org.kie.api.definition.type.Label(value = "idLista")
+   @org.kie.api.definition.type.Label("idLista")
    private java.lang.Integer idLista;
 
-   @org.kie.api.definition.type.Label(value = "idTipoProducto")
+   @org.kie.api.definition.type.Label("idTipoProducto")
    private java.lang.Integer idTipoProducto;
 
-   @org.kie.api.definition.type.Label(value = "fechaEmision")
+   @org.kie.api.definition.type.Label("fechaEmision")
    private java.util.Date fechaEmision;
+
+   @org.kie.api.definition.type.Label(value = "tipoPedido")
+   private java.lang.Integer tipoPedido;
+
+   @org.kie.api.definition.type.Label(value = "sTipoPedido")
+   private java.lang.String sTipoPedido;
 
    public Documento()
    {
@@ -254,6 +260,26 @@ public class Documento implements java.io.Serializable
       this.fechaEmision = fechaEmision;
    }
 
+   public java.lang.Integer getTipoPedido()
+   {
+      return this.tipoPedido;
+   }
+
+   public void setTipoPedido(java.lang.Integer tipoPedido)
+   {
+      this.tipoPedido = tipoPedido;
+   }
+
+   public java.lang.String getsTipoPedido()
+   {
+      return this.sTipoPedido;
+   }
+
+   public void setsTipoPedido(java.lang.String sTipoPedido)
+   {
+      this.sTipoPedido = sTipoPedido;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
          java.lang.String idDespacho, java.util.Date fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
@@ -263,7 +289,8 @@ public class Documento implements java.io.Serializable
          java.lang.Integer tipoPago, java.lang.String adicional4,
          java.lang.String adicional32, java.lang.String mensajeError,
          java.lang.Integer idLista, java.lang.Integer idTipoProducto,
-         java.util.Date fechaEmision)
+         java.util.Date fechaEmision, java.lang.Integer tipoPedido,
+         java.lang.String sTipoPedido)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -284,6 +311,8 @@ public class Documento implements java.io.Serializable
       this.idLista = idLista;
       this.idTipoProducto = idTipoProducto;
       this.fechaEmision = fechaEmision;
+      this.tipoPedido = tipoPedido;
+      this.sTipoPedido = sTipoPedido;
    }
 
 }
