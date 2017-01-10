@@ -14,7 +14,7 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("idDocumento")
    private java.lang.Integer idDocumento;
    @org.kie.api.definition.type.Label("codBodega")
-   private java.lang.String codBodega;
+   private Integer codBodega;
    @org.kie.api.definition.type.Label("idDespacho")
    private java.lang.String idDespacho;
    @org.kie.api.definition.type.Label("fechaDespecho")
@@ -69,6 +69,9 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("descTipoPedido")
    private java.lang.String descTipoPedido;
 
+   @org.kie.api.definition.type.Label(value = "idBodegaAnterior")
+   private java.lang.Integer idBodegaAnterior;
+
    public Documento()
    {
    }
@@ -81,16 +84,6 @@ public class Documento implements java.io.Serializable
    public void setIdDocumento(java.lang.Integer idDocumento)
    {
       this.idDocumento = idDocumento;
-   }
-
-   public java.lang.String getCodBodega()
-   {
-      return this.codBodega;
-   }
-
-   public void setCodBodega(java.lang.String codBodega)
-   {
-      this.codBodega = codBodega;
    }
 
    public java.lang.String getIdDespacho()
@@ -293,7 +286,27 @@ public class Documento implements java.io.Serializable
       this.fechaEmision = fechaEmision;
    }
 
-   public Documento(java.lang.Integer idDocumento, java.lang.String codBodega,
+   public java.lang.Integer getCodBodega()
+   {
+      return this.codBodega;
+   }
+
+   public void setCodBodega(java.lang.Integer codBodega)
+   {
+      this.codBodega = codBodega;
+   }
+
+   public java.lang.Integer getIdBodegaAnterior()
+   {
+      return this.idBodegaAnterior;
+   }
+
+   public void setIdBodegaAnterior(java.lang.Integer idBodegaAnterior)
+   {
+      this.idBodegaAnterior = idBodegaAnterior;
+   }
+
+   public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
          java.lang.Integer stock, java.lang.String tipoNota,
@@ -303,7 +316,8 @@ public class Documento implements java.io.Serializable
          java.lang.String adicional32, java.lang.String mensajeError,
          java.lang.Integer idLista, java.lang.Integer idTipoProducto,
          java.lang.Integer fechaEmision, java.lang.Integer tipoPedido,
-         java.lang.Integer valorNeto, java.lang.String descTipoPedido)
+         java.lang.Integer valorNeto, java.lang.String descTipoPedido,
+         java.lang.Integer idBodegaAnterior)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -327,6 +341,7 @@ public class Documento implements java.io.Serializable
       this.tipoPedido = tipoPedido;
       this.valorNeto = valorNeto;
       this.descTipoPedido = descTipoPedido;
+      this.idBodegaAnterior = idBodegaAnterior;
    }
 
 }
