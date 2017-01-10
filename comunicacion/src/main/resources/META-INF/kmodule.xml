@@ -14,6 +14,7 @@
   <kbase name="base2" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.nacional.grabar.*">
     <ksession name="session2" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseAB" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.ajustebloqueo.erp.*"/>
   <kbase name="base5" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.nacional.firma.*">
     <ksession name="session6" type="stateless" default="false" clockType="realtime"/>
   </kbase>
