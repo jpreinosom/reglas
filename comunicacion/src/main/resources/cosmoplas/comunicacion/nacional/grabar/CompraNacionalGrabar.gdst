@@ -11,32 +11,6 @@
   <metadataCols/>
   <attributeCols/>
   <conditionPatterns>
-    <Pattern52>
-      <factType>Documento</factType>
-      <boundName>f1</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>true</hideColumn>
-          <width>-1</width>
-          <header>s</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>adicional32</factField>
-          <fieldType>String</fieldType>
-          <operator>== null</operator>
-          <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <operator></operator>
-        <parameters/>
-      </window>
-    </Pattern52>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
@@ -198,12 +172,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -238,12 +206,6 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -287,12 +249,6 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
