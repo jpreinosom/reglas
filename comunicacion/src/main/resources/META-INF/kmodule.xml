@@ -14,4 +14,10 @@
   <kbase name="base5" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.nacional.firma.*">
     <ksession name="session6" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseInter1" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.internacional.grabar.*">
+    <ksession name="sessionIntGrabar" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="baseInter2" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.internacional.firmar.*">
+    <ksession name="sessionIntFirma1" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
 </kmodule>
