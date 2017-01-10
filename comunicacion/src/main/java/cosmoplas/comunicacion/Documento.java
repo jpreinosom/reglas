@@ -72,11 +72,14 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("idBodegaAnterior")
    private java.lang.Integer idBodegaAnterior;
 
-   @org.kie.api.definition.type.Label(value = "tipoTrx")
+   @org.kie.api.definition.type.Label("tipoTrx")
    private java.lang.String tipoTrx;
 
-   @org.kie.api.definition.type.Label(value = "cantidadAjusteBloqueo")
+   @org.kie.api.definition.type.Label("cantidadAjusteBloqueo")
    private java.lang.Integer cantidadAjusteBloqueo;
+
+   @org.kie.api.definition.type.Label(value = "tipoDocumento")
+   private java.lang.String tipoDocumento;
 
    public Documento()
    {
@@ -332,6 +335,16 @@ public class Documento implements java.io.Serializable
       this.cantidadAjusteBloqueo = cantidadAjusteBloqueo;
    }
 
+   public java.lang.String getTipoDocumento()
+   {
+      return this.tipoDocumento;
+   }
+
+   public void setTipoDocumento(java.lang.String tipoDocumento)
+   {
+      this.tipoDocumento = tipoDocumento;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
@@ -344,7 +357,7 @@ public class Documento implements java.io.Serializable
          java.lang.Integer fechaEmision, java.lang.Integer tipoPedido,
          java.lang.Integer valorNeto, java.lang.String descTipoPedido,
          java.lang.Integer idBodegaAnterior, java.lang.String tipoTrx,
-         java.lang.Integer cantidadAjusteBloqueo)
+         java.lang.Integer cantidadAjusteBloqueo, java.lang.String tipoDocumento)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -371,6 +384,7 @@ public class Documento implements java.io.Serializable
       this.idBodegaAnterior = idBodegaAnterior;
       this.tipoTrx = tipoTrx;
       this.cantidadAjusteBloqueo = cantidadAjusteBloqueo;
+      this.tipoDocumento = tipoDocumento;
    }
 
 }
