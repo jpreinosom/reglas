@@ -69,8 +69,14 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("descTipoPedido")
    private java.lang.String descTipoPedido;
 
-   @org.kie.api.definition.type.Label(value = "idBodegaAnterior")
+   @org.kie.api.definition.type.Label("idBodegaAnterior")
    private java.lang.Integer idBodegaAnterior;
+
+   @org.kie.api.definition.type.Label(value = "tipoTrx")
+   private java.lang.String tipoTrx;
+
+   @org.kie.api.definition.type.Label(value = "cantidadAjusteBloqueo")
+   private java.lang.Integer cantidadAjusteBloqueo;
 
    public Documento()
    {
@@ -306,6 +312,26 @@ public class Documento implements java.io.Serializable
       this.idBodegaAnterior = idBodegaAnterior;
    }
 
+   public java.lang.String getTipoTrx()
+   {
+      return this.tipoTrx;
+   }
+
+   public void setTipoTrx(java.lang.String tipoTrx)
+   {
+      this.tipoTrx = tipoTrx;
+   }
+
+   public java.lang.Integer getCantidadAjusteBloqueo()
+   {
+      return this.cantidadAjusteBloqueo;
+   }
+
+   public void setCantidadAjusteBloqueo(java.lang.Integer cantidadAjusteBloqueo)
+   {
+      this.cantidadAjusteBloqueo = cantidadAjusteBloqueo;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer fechaDespecho,
          java.lang.Integer montoReservado, java.lang.Boolean esKit,
@@ -317,7 +343,8 @@ public class Documento implements java.io.Serializable
          java.lang.Integer idLista, java.lang.Integer idTipoProducto,
          java.lang.Integer fechaEmision, java.lang.Integer tipoPedido,
          java.lang.Integer valorNeto, java.lang.String descTipoPedido,
-         java.lang.Integer idBodegaAnterior)
+         java.lang.Integer idBodegaAnterior, java.lang.String tipoTrx,
+         java.lang.Integer cantidadAjusteBloqueo)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -342,6 +369,8 @@ public class Documento implements java.io.Serializable
       this.valorNeto = valorNeto;
       this.descTipoPedido = descTipoPedido;
       this.idBodegaAnterior = idBodegaAnterior;
+      this.tipoTrx = tipoTrx;
+      this.cantidadAjusteBloqueo = cantidadAjusteBloqueo;
    }
 
 }
