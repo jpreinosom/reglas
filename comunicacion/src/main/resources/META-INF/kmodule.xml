@@ -8,7 +8,10 @@
   <kbase name="base1" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.*">
     <ksession name="session1" type="stateless" default="false" clockType="realtime"/>
   </kbase>
-  <kbase name="base2" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.nacional.*">
+  <kbase name="base2" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.nacional.CompraNacional.gdst">
     <ksession name="session2" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+  <kbase name="base5" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.nacional.CompraNacionalFirma.gsdt">
+    <ksession name="session6" type="stateless" default="false" clockType="realtime"/>
   </kbase>
 </kmodule>
