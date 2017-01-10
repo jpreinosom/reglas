@@ -5,6 +5,9 @@
   <kbase name="base4" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.venta.nvl.*, cosmoplas.comunicacion.Documento">
     <ksession name="session4" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseNC" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmplas.comunicacion.Documento, cosmoplas.comunicacion.notacredito.wms.*">
+    <ksession name="sessionNC" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="base1" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.*">
     <ksession name="session1" type="stateless" default="false" clockType="realtime"/>
   </kbase>
