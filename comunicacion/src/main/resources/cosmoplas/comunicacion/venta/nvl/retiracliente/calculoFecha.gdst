@@ -9,7 +9,21 @@
     <width>-1</width>
   </descriptionCol>
   <metadataCols/>
-  <attributeCols/>
+  <attributeCols>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <attribute>no-loop</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
   <conditionPatterns>
     <Pattern52>
       <factType>Documento</factType>
@@ -46,25 +60,13 @@
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>Date fechaDespacho = f1.getFechaDespacho();
 		Date fechaHoy = new Date();
-		DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM);
-		String fechaInicioString = df.format(fechaHoy);
-		try {
-		fechaHoy = df.parse(fechaInicioString);
-		}
-		catch (ParseException ex) {
-		}
-		String fechaFinalString = df.format(fechaDespacho);
-		try {
-			fechaDespacho = df.parse(fechaFinalString);
-		}
-		catch (ParseException ex) {
-		}
 		long fechaInicialMs = fechaHoy.getTime();
 		long fechaFinalMs = fechaDespacho.getTime();
 		long diferencia = fechaFinalMs - fechaInicialMs;
 		double dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
 		f1.setDiferenciaFecha((int) dias);
-		System.out.println(f1.getDiferenciaFecha());</text>
+		System.out.println(f1.getDiferenciaFecha());
+update(f1);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
@@ -110,6 +112,15 @@
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>cosmoplas.comunicacion.Documento</type>
       </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.util.Date</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.lang.Integer</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.lang.String</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
   <packageName>cosmoplas.comunicacion.venta.nvl.retiracliente</packageName>
@@ -125,6 +136,12 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
