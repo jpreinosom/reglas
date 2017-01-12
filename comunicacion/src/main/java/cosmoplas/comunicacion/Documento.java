@@ -17,8 +17,6 @@ public class Documento implements java.io.Serializable
    private Integer codBodega;
    @org.kie.api.definition.type.Label("idDespacho")
    private java.lang.String idDespacho;
-   @org.kie.api.definition.type.Label("fechaDespecho")
-   private Integer fechaDespecho;
    @org.kie.api.definition.type.Label("montoReservado")
    private java.lang.Integer montoReservado;
    @org.kie.api.definition.type.Label("esKit")
@@ -78,8 +76,11 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("cantidadAjusteBloqueo")
    private java.lang.Integer cantidadAjusteBloqueo;
 
-   @org.kie.api.definition.type.Label(value = "tipoDocumento")
+   @org.kie.api.definition.type.Label("tipoDocumento")
    private java.lang.String tipoDocumento;
+
+   @org.kie.api.definition.type.Label(value = "fechaDespacho")
+   private java.lang.Integer fechaDespacho;
 
    public Documento()
    {
@@ -265,16 +266,6 @@ public class Documento implements java.io.Serializable
       this.descTipoPedido = descTipoPedido;
    }
 
-   public java.lang.Integer getFechaDespecho()
-   {
-      return this.fechaDespecho;
-   }
-
-   public void setFechaDespecho(java.lang.Integer fechaDespecho)
-   {
-      this.fechaDespecho = fechaDespecho;
-   }
-
    public java.lang.Integer getFechaHoy()
    {
       return this.fechaHoy;
@@ -345,24 +336,33 @@ public class Documento implements java.io.Serializable
       this.tipoDocumento = tipoDocumento;
    }
 
+   public java.lang.Integer getFechaDespacho()
+   {
+      return this.fechaDespacho;
+   }
+
+   public void setFechaDespacho(java.lang.Integer fechaDespacho)
+   {
+      this.fechaDespacho = fechaDespacho;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
-         java.lang.String idDespacho, java.lang.Integer fechaDespecho,
-         java.lang.Integer montoReservado, java.lang.Boolean esKit,
-         java.lang.Integer stock, java.lang.String tipoNota,
-         java.lang.Boolean respJust, java.lang.Boolean respBus,
-         java.lang.Integer fechaHoy, java.lang.Integer diferenciaFecha,
-         java.lang.Integer tipoPago, java.lang.String adicional4,
-         java.lang.String adicional32, java.lang.String mensajeError,
-         java.lang.Integer idLista, java.lang.Integer idTipoProducto,
-         java.lang.Integer fechaEmision, java.lang.Integer tipoPedido,
-         java.lang.Integer valorNeto, java.lang.String descTipoPedido,
-         java.lang.Integer idBodegaAnterior, java.lang.String tipoTrx,
-         java.lang.Integer cantidadAjusteBloqueo, java.lang.String tipoDocumento)
+         java.lang.String idDespacho, java.lang.Integer montoReservado,
+         java.lang.Boolean esKit, java.lang.Integer stock,
+         java.lang.String tipoNota, java.lang.Boolean respJust,
+         java.lang.Boolean respBus, java.lang.Integer fechaHoy,
+         java.lang.Integer diferenciaFecha, java.lang.Integer tipoPago,
+         java.lang.String adicional4, java.lang.String adicional32,
+         java.lang.String mensajeError, java.lang.Integer idLista,
+         java.lang.Integer idTipoProducto, java.lang.Integer fechaEmision,
+         java.lang.Integer tipoPedido, java.lang.Integer valorNeto,
+         java.lang.String descTipoPedido, java.lang.Integer idBodegaAnterior,
+         java.lang.String tipoTrx, java.lang.Integer cantidadAjusteBloqueo,
+         java.lang.String tipoDocumento, java.lang.Integer fechaDespacho)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
       this.idDespacho = idDespacho;
-      this.fechaDespecho = fechaDespecho;
       this.montoReservado = montoReservado;
       this.esKit = esKit;
       this.stock = stock;
@@ -385,6 +385,7 @@ public class Documento implements java.io.Serializable
       this.tipoTrx = tipoTrx;
       this.cantidadAjusteBloqueo = cantidadAjusteBloqueo;
       this.tipoDocumento = tipoDocumento;
+      this.fechaDespacho = fechaDespacho;
    }
 
 }
