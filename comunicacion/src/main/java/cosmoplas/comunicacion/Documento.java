@@ -56,7 +56,7 @@ public class Documento implements java.io.Serializable
    private java.lang.Integer idTipoProducto;
 
    @org.kie.api.definition.type.Label("fechaEmision")
-   private Integer fechaEmision;
+   private Date fechaEmision;
 
    @org.kie.api.definition.type.Label("tipoPedido")
    private java.lang.Integer tipoPedido;
@@ -79,8 +79,8 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("tipoDocumento")
    private java.lang.String tipoDocumento;
 
-   @org.kie.api.definition.type.Label(value = "fechaDespacho")
-   private java.lang.Integer fechaDespacho;
+   @org.kie.api.definition.type.Label("fechaDespacho")
+   private Date fechaDespacho;
 
    public Documento()
    {
@@ -276,16 +276,6 @@ public class Documento implements java.io.Serializable
       this.fechaHoy = fechaHoy;
    }
 
-   public java.lang.Integer getFechaEmision()
-   {
-      return this.fechaEmision;
-   }
-
-   public void setFechaEmision(java.lang.Integer fechaEmision)
-   {
-      this.fechaEmision = fechaEmision;
-   }
-
    public java.lang.Integer getCodBodega()
    {
       return this.codBodega;
@@ -336,14 +326,24 @@ public class Documento implements java.io.Serializable
       this.tipoDocumento = tipoDocumento;
    }
 
-   public java.lang.Integer getFechaDespacho()
+   public java.util.Date getFechaDespacho()
    {
       return this.fechaDespacho;
    }
 
-   public void setFechaDespacho(java.lang.Integer fechaDespacho)
+   public void setFechaDespacho(java.util.Date fechaDespacho)
    {
       this.fechaDespacho = fechaDespacho;
+   }
+
+   public java.util.Date getFechaEmision()
+   {
+      return this.fechaEmision;
+   }
+
+   public void setFechaEmision(java.util.Date fechaEmision)
+   {
+      this.fechaEmision = fechaEmision;
    }
 
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
@@ -354,11 +354,11 @@ public class Documento implements java.io.Serializable
          java.lang.Integer diferenciaFecha, java.lang.Integer tipoPago,
          java.lang.String adicional4, java.lang.String adicional32,
          java.lang.String mensajeError, java.lang.Integer idLista,
-         java.lang.Integer idTipoProducto, java.lang.Integer fechaEmision,
+         java.lang.Integer idTipoProducto, java.util.Date fechaEmision,
          java.lang.Integer tipoPedido, java.lang.Integer valorNeto,
          java.lang.String descTipoPedido, java.lang.Integer idBodegaAnterior,
          java.lang.String tipoTrx, java.lang.Integer cantidadAjusteBloqueo,
-         java.lang.String tipoDocumento, java.lang.Integer fechaDespacho)
+         java.lang.String tipoDocumento, java.util.Date fechaDespacho)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
