@@ -32,7 +32,7 @@ public class Documento implements java.io.Serializable
    private java.lang.Boolean respBus;
 
    @org.kie.api.definition.type.Label("fechaHoy")
-   private Integer fechaHoy;
+   private Date fechaHoy;
 
    @org.kie.api.definition.type.Label("diferenciaFecha")
    private java.lang.Integer diferenciaFecha;
@@ -266,16 +266,6 @@ public class Documento implements java.io.Serializable
       this.descTipoPedido = descTipoPedido;
    }
 
-   public java.lang.Integer getFechaHoy()
-   {
-      return this.fechaHoy;
-   }
-
-   public void setFechaHoy(java.lang.Integer fechaHoy)
-   {
-      this.fechaHoy = fechaHoy;
-   }
-
    public java.lang.Integer getCodBodega()
    {
       return this.codBodega;
@@ -346,11 +336,21 @@ public class Documento implements java.io.Serializable
       this.fechaEmision = fechaEmision;
    }
 
+   public java.util.Date getFechaHoy()
+   {
+      return this.fechaHoy;
+   }
+
+   public void setFechaHoy(java.util.Date fechaHoy)
+   {
+      this.fechaHoy = fechaHoy;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
          java.lang.String tipoNota, java.lang.Boolean respJust,
-         java.lang.Boolean respBus, java.lang.Integer fechaHoy,
+         java.lang.Boolean respBus, java.util.Date fechaHoy,
          java.lang.Integer diferenciaFecha, java.lang.Integer tipoPago,
          java.lang.String adicional4, java.lang.String adicional32,
          java.lang.String mensajeError, java.lang.Integer idLista,
