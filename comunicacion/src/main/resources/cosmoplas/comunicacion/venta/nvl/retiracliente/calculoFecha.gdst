@@ -59,7 +59,7 @@
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>Date fechaDespacho = f1.getFechaDespacho();
-		Date fechaHoy = new Date();
+Date fechaHoy = f1.getFechaHoy();
 		long fechaInicialMs = fechaHoy.getTime();
 		long fechaFinalMs = fechaDespacho.getTime();
 		long diferencia = fechaFinalMs - fechaInicialMs;
