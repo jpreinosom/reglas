@@ -26,4 +26,7 @@
   <kbase name="baseInter2" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.internacional.firmar.*">
     <ksession name="sessionIntFirma1" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseNVLRetiraCliente" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.venta.nvl.retiracliente.calculoFecha">
+    <ksession name="sessionNVLRetiraCliente" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
 </kmodule>
