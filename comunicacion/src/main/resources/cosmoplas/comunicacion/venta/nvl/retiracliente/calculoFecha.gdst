@@ -38,20 +38,45 @@
     </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <set-field-col52>
-      <typedDefaultValue>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>1</header>
-      <boundName>f1</boundName>
-      <factField>valorNeto</factField>
-      <type>Integer</type>
-      <update>false</update>
-    </set-field-col52>
+      <header>calculo Fecha</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>Date fechaDespacho = f1.getFechaDespacho();
+		Date fechaHoy = new Date();
+		DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM);
+		String fechaInicioString = df.format(fechaHoy);
+		try {
+		fechaHoy = df.parse(fechaInicioString);
+		}
+		catch (ParseException ex) {
+		}
+		String fechaFinalString = df.format(fechaDespacho);
+		try {
+			fechaDespacho = df.parse(fechaFinalString);
+		}
+		catch (ParseException ex) {
+		}
+		long fechaInicialMs = fechaHoy.getTime();
+		long fechaFinalMs = fechaDespacho.getTime();
+		long diferencia = fechaFinalMs - fechaInicialMs;
+		double dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+		f1.setDiferenciaFecha((int) dias);
+		System.out.println(f1.getDiferenciaFecha());</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>calculo Fecha</header>
+          <varName></varName>
+          <fieldType>Boolean</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -89,5 +114,31 @@
   </imports>
   <packageName>cosmoplas.comunicacion.venta.nvl.retiracliente</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
