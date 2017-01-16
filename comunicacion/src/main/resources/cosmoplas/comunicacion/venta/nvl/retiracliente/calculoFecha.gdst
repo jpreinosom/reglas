@@ -76,6 +76,7 @@ Date fechaHoy = f1.getFechaHoy();
 		double dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
 		f1.setDiferenciaFecha((int) dias);
                 f1.setDiffCantVenta(f1.getDisponible() - f1.getCantidadVenta());
+System.out.println(&quot;diferencia cantidad &quot; + f1.getDiffCantVenta());
 		System.out.println(f1.getDiferenciaFecha());
 update(f1);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
