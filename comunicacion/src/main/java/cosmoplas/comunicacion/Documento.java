@@ -82,6 +82,15 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("fechaDespacho")
    private Date fechaDespacho;
 
+   @org.kie.api.definition.type.Label(value = "disponible")
+   private java.lang.Integer disponible;
+
+   @org.kie.api.definition.type.Label(value = "cantidadVenta")
+   private java.lang.Integer cantidadVenta;
+
+   @org.kie.api.definition.type.Label(value = "diffCantVenta")
+   private java.lang.Integer diffCantVenta;
+
    public Documento()
    {
    }
@@ -346,6 +355,36 @@ public class Documento implements java.io.Serializable
       this.fechaHoy = fechaHoy;
    }
 
+   public java.lang.Integer getDisponible()
+   {
+      return this.disponible;
+   }
+
+   public void setDisponible(java.lang.Integer disponible)
+   {
+      this.disponible = disponible;
+   }
+
+   public java.lang.Integer getCantidadVenta()
+   {
+      return this.cantidadVenta;
+   }
+
+   public void setCantidadVenta(java.lang.Integer cantidadVenta)
+   {
+      this.cantidadVenta = cantidadVenta;
+   }
+
+   public java.lang.Integer getDiffCantVenta()
+   {
+      return this.diffCantVenta;
+   }
+
+   public void setDiffCantVenta(java.lang.Integer diffCantVenta)
+   {
+      this.diffCantVenta = diffCantVenta;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -358,7 +397,9 @@ public class Documento implements java.io.Serializable
          java.lang.Integer tipoPedido, java.lang.Integer valorNeto,
          java.lang.String descTipoPedido, java.lang.Integer idBodegaAnterior,
          java.lang.String tipoTrx, java.lang.Integer cantidadAjusteBloqueo,
-         java.lang.String tipoDocumento, java.util.Date fechaDespacho)
+         java.lang.String tipoDocumento, java.util.Date fechaDespacho,
+         java.lang.Integer disponible, java.lang.Integer cantidadVenta,
+         java.lang.Integer diffCantVenta)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -386,6 +427,9 @@ public class Documento implements java.io.Serializable
       this.cantidadAjusteBloqueo = cantidadAjusteBloqueo;
       this.tipoDocumento = tipoDocumento;
       this.fechaDespacho = fechaDespacho;
+      this.disponible = disponible;
+      this.cantidadVenta = cantidadVenta;
+      this.diffCantVenta = diffCantVenta;
    }
 
 }
