@@ -82,14 +82,26 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("fechaDespacho")
    private Date fechaDespacho;
 
-   @org.kie.api.definition.type.Label(value = "disponible")
+   @org.kie.api.definition.type.Label("disponible")
    private java.lang.Integer disponible;
 
-   @org.kie.api.definition.type.Label(value = "cantidadVenta")
+   @org.kie.api.definition.type.Label("cantidadVenta")
    private java.lang.Integer cantidadVenta;
 
-   @org.kie.api.definition.type.Label(value = "diffCantVenta")
+   @org.kie.api.definition.type.Label("diffCantVenta")
    private java.lang.Integer diffCantVenta;
+
+   @org.kie.api.definition.type.Label(value = "formaPago")
+   private java.lang.String formaPago;
+
+   @org.kie.api.definition.type.Label(value = "tipoEntrega")
+   private java.lang.String tipoEntrega;
+
+   @org.kie.api.definition.type.Label(value = "transportista")
+   private java.lang.String transportista;
+
+   @org.kie.api.definition.type.Label(value = "montoVenta")
+   private java.lang.Integer montoVenta;
 
    public Documento()
    {
@@ -385,6 +397,46 @@ public class Documento implements java.io.Serializable
       this.diffCantVenta = diffCantVenta;
    }
 
+   public java.lang.String getFormaPago()
+   {
+      return this.formaPago;
+   }
+
+   public void setFormaPago(java.lang.String formaPago)
+   {
+      this.formaPago = formaPago;
+   }
+
+   public java.lang.String getTipoEntrega()
+   {
+      return this.tipoEntrega;
+   }
+
+   public void setTipoEntrega(java.lang.String tipoEntrega)
+   {
+      this.tipoEntrega = tipoEntrega;
+   }
+
+   public java.lang.String getTransportista()
+   {
+      return this.transportista;
+   }
+
+   public void setTransportista(java.lang.String transportista)
+   {
+      this.transportista = transportista;
+   }
+
+   public java.lang.Integer getMontoVenta()
+   {
+      return this.montoVenta;
+   }
+
+   public void setMontoVenta(java.lang.Integer montoVenta)
+   {
+      this.montoVenta = montoVenta;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -399,7 +451,9 @@ public class Documento implements java.io.Serializable
          java.lang.String tipoTrx, java.lang.Integer cantidadAjusteBloqueo,
          java.lang.String tipoDocumento, java.util.Date fechaDespacho,
          java.lang.Integer disponible, java.lang.Integer cantidadVenta,
-         java.lang.Integer diffCantVenta)
+         java.lang.Integer diffCantVenta, java.lang.String formaPago,
+         java.lang.String tipoEntrega, java.lang.String transportista,
+         java.lang.Integer montoVenta)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -430,6 +484,10 @@ public class Documento implements java.io.Serializable
       this.disponible = disponible;
       this.cantidadVenta = cantidadVenta;
       this.diffCantVenta = diffCantVenta;
+      this.formaPago = formaPago;
+      this.tipoEntrega = tipoEntrega;
+      this.transportista = transportista;
+      this.montoVenta = montoVenta;
    }
 
 }
