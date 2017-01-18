@@ -103,8 +103,11 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("montoVenta")
    private java.lang.Integer montoVenta;
 
-   @org.kie.api.definition.type.Label(value = "valorSeguro")
+   @org.kie.api.definition.type.Label("valorSeguro")
    private java.lang.Integer valorSeguro;
+
+   @org.kie.api.definition.type.Label(value = "saldoCte")
+   private java.lang.Integer saldoCte;
 
    public Documento()
    {
@@ -450,6 +453,16 @@ public class Documento implements java.io.Serializable
       this.valorSeguro = valorSeguro;
    }
 
+   public java.lang.Integer getSaldoCte()
+   {
+      return this.saldoCte;
+   }
+
+   public void setSaldoCte(java.lang.Integer saldoCte)
+   {
+      this.saldoCte = saldoCte;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -466,7 +479,8 @@ public class Documento implements java.io.Serializable
          java.lang.Integer disponible, java.lang.Integer cantidadVenta,
          java.lang.Integer diffCantVenta, java.lang.String formaPago,
          java.lang.String tipoEntrega, java.lang.String transportista,
-         java.lang.Integer montoVenta, java.lang.Integer valorSeguro)
+         java.lang.Integer montoVenta, java.lang.Integer valorSeguro,
+         java.lang.Integer saldoCte)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -502,6 +516,7 @@ public class Documento implements java.io.Serializable
       this.transportista = transportista;
       this.montoVenta = montoVenta;
       this.valorSeguro = valorSeguro;
+      this.saldoCte = saldoCte;
    }
 
 }
