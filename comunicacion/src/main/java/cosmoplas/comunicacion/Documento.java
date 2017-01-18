@@ -91,17 +91,20 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("diffCantVenta")
    private java.lang.Integer diffCantVenta;
 
-   @org.kie.api.definition.type.Label(value = "formaPago")
+   @org.kie.api.definition.type.Label("formaPago")
    private java.lang.String formaPago;
 
-   @org.kie.api.definition.type.Label(value = "tipoEntrega")
+   @org.kie.api.definition.type.Label("tipoEntrega")
    private java.lang.String tipoEntrega;
 
-   @org.kie.api.definition.type.Label(value = "transportista")
+   @org.kie.api.definition.type.Label("transportista")
    private java.lang.String transportista;
 
-   @org.kie.api.definition.type.Label(value = "montoVenta")
+   @org.kie.api.definition.type.Label("montoVenta")
    private java.lang.Integer montoVenta;
+
+   @org.kie.api.definition.type.Label(value = "valorSeguro")
+   private java.lang.Integer valorSeguro;
 
    public Documento()
    {
@@ -437,6 +440,16 @@ public class Documento implements java.io.Serializable
       this.montoVenta = montoVenta;
    }
 
+   public java.lang.Integer getValorSeguro()
+   {
+      return this.valorSeguro;
+   }
+
+   public void setValorSeguro(java.lang.Integer valorSeguro)
+   {
+      this.valorSeguro = valorSeguro;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -453,7 +466,7 @@ public class Documento implements java.io.Serializable
          java.lang.Integer disponible, java.lang.Integer cantidadVenta,
          java.lang.Integer diffCantVenta, java.lang.String formaPago,
          java.lang.String tipoEntrega, java.lang.String transportista,
-         java.lang.Integer montoVenta)
+         java.lang.Integer montoVenta, java.lang.Integer valorSeguro)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -488,6 +501,7 @@ public class Documento implements java.io.Serializable
       this.tipoEntrega = tipoEntrega;
       this.transportista = transportista;
       this.montoVenta = montoVenta;
+      this.valorSeguro = valorSeguro;
    }
 
 }
