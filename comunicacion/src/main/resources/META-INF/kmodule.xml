@@ -11,6 +11,9 @@
   <kbase name="base1" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.*">
     <ksession name="session1" type="stateless" default="false" clockType="realtime"/>
   </kbase>
+  <kbase name="baseGenerica" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.genericoventa.*">
+    <ksession name="sessionGenericoVenta" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
   <kbase name="base2" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="cosmoplas.comunicacion.Documento, cosmoplas.comunicacion.nacional.grabar.*">
     <ksession name="session2" type="stateless" default="false" clockType="realtime"/>
   </kbase>
