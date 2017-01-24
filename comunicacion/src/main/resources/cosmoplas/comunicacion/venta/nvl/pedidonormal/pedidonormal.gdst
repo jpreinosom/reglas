@@ -154,7 +154,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Pedido Completo</valueString>
+        <valueString>Pedido Normal</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -195,7 +195,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Pedido Completo</valueString>
+        <valueString>Pedido Normal</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
