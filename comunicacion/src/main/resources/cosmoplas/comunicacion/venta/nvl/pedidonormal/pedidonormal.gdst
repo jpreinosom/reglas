@@ -53,7 +53,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>169</width>
           <header>monto venta mayor igual a  </header>
           <constraintValueType>1</constraintValueType>
           <factField>montoVenta</factField>
@@ -68,7 +68,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>192</width>
           <header>monto venta menor a </header>
           <constraintValueType>1</constraintValueType>
           <factField>montoVenta</factField>
