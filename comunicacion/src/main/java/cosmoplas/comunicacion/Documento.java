@@ -115,8 +115,11 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("idDocOrigen")
    private java.lang.Integer idDocOrigen;
 
-   @org.kie.api.definition.type.Label(value = "sucursal")
+   @org.kie.api.definition.type.Label("sucursal")
    private java.lang.Integer sucursal;
+
+   @org.kie.api.definition.type.Label(value = "codBodegaDestino")
+   private java.lang.Integer codBodegaDestino;
 
    public Documento()
    {
@@ -502,6 +505,16 @@ public class Documento implements java.io.Serializable
       this.sucursal = sucursal;
    }
 
+   public java.lang.Integer getCodBodegaDestino()
+   {
+      return this.codBodegaDestino;
+   }
+
+   public void setCodBodegaDestino(java.lang.Integer codBodegaDestino)
+   {
+      this.codBodegaDestino = codBodegaDestino;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -520,7 +533,8 @@ public class Documento implements java.io.Serializable
          java.lang.String tipoEntrega, java.lang.String transportista,
          java.lang.Integer montoVenta, java.lang.Integer valorSeguro,
          java.lang.Integer saldoCte, java.lang.String rol,
-         java.lang.Integer idDocOrigen, java.lang.Integer sucursal)
+         java.lang.Integer idDocOrigen, java.lang.Integer sucursal,
+         java.lang.Integer codBodegaDestino)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -560,6 +574,7 @@ public class Documento implements java.io.Serializable
       this.rol = rol;
       this.idDocOrigen = idDocOrigen;
       this.sucursal = sucursal;
+      this.codBodegaDestino = codBodegaDestino;
    }
 
 }
