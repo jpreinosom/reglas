@@ -106,8 +106,11 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("valorSeguro")
    private java.lang.Integer valorSeguro;
 
-   @org.kie.api.definition.type.Label(value = "saldoCte")
+   @org.kie.api.definition.type.Label("saldoCte")
    private java.lang.Integer saldoCte;
+
+   @org.kie.api.definition.type.Label(value = "rol")
+   private java.lang.String rol;
 
    public Documento()
    {
@@ -463,6 +466,16 @@ public class Documento implements java.io.Serializable
       this.saldoCte = saldoCte;
    }
 
+   public java.lang.String getRol()
+   {
+      return this.rol;
+   }
+
+   public void setRol(java.lang.String rol)
+   {
+      this.rol = rol;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -480,7 +493,7 @@ public class Documento implements java.io.Serializable
          java.lang.Integer diffCantVenta, java.lang.String formaPago,
          java.lang.String tipoEntrega, java.lang.String transportista,
          java.lang.Integer montoVenta, java.lang.Integer valorSeguro,
-         java.lang.Integer saldoCte)
+         java.lang.Integer saldoCte, java.lang.String rol)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -517,6 +530,7 @@ public class Documento implements java.io.Serializable
       this.montoVenta = montoVenta;
       this.valorSeguro = valorSeguro;
       this.saldoCte = saldoCte;
+      this.rol = rol;
    }
 
 }
