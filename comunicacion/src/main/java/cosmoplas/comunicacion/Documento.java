@@ -127,8 +127,11 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("documentoHijo")
    private java.lang.Boolean documentoHijo;
 
-   @org.kie.api.definition.type.Label(value = "calculoWMS")
+   @org.kie.api.definition.type.Label("calculoWMS")
    private java.lang.Integer calculoWMS;
+
+   @org.kie.api.definition.type.Label(value = "danielTorres")
+   private java.lang.Boolean danielTorres;
 
    public Documento()
    {
@@ -554,6 +557,16 @@ public class Documento implements java.io.Serializable
       this.calculoWMS = calculoWMS;
    }
 
+   public java.lang.Boolean getDanielTorres()
+   {
+      return this.danielTorres;
+   }
+
+   public void setDanielTorres(java.lang.Boolean danielTorres)
+   {
+      this.danielTorres = danielTorres;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -574,7 +587,8 @@ public class Documento implements java.io.Serializable
          java.lang.Integer saldoCte, java.lang.String rol,
          java.lang.Integer idDocOrigen, java.lang.Integer sucursal,
          java.lang.Integer codBodegaDestino, java.lang.Boolean pasoWMS,
-         java.lang.Boolean documentoHijo, java.lang.Integer calculoWMS)
+         java.lang.Boolean documentoHijo, java.lang.Integer calculoWMS,
+         java.lang.Boolean danielTorres)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -618,6 +632,7 @@ public class Documento implements java.io.Serializable
       this.pasoWMS = pasoWMS;
       this.documentoHijo = documentoHijo;
       this.calculoWMS = calculoWMS;
+      this.danielTorres = danielTorres;
    }
 
 }
