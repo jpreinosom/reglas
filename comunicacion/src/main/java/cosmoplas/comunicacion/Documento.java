@@ -118,8 +118,14 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("sucursal")
    private java.lang.Integer sucursal;
 
-   @org.kie.api.definition.type.Label(value = "codBodegaDestino")
+   @org.kie.api.definition.type.Label("codBodegaDestino")
    private java.lang.Integer codBodegaDestino;
+
+   @org.kie.api.definition.type.Label(value = "pasoWMS")
+   private java.lang.Boolean pasoWMS;
+
+   @org.kie.api.definition.type.Label(value = "documentoHijo")
+   private java.lang.Boolean documentoHijo;
 
    public Documento()
    {
@@ -515,6 +521,26 @@ public class Documento implements java.io.Serializable
       this.codBodegaDestino = codBodegaDestino;
    }
 
+   public java.lang.Boolean getPasoWMS()
+   {
+      return this.pasoWMS;
+   }
+
+   public void setPasoWMS(java.lang.Boolean pasoWMS)
+   {
+      this.pasoWMS = pasoWMS;
+   }
+
+   public java.lang.Boolean getDocumentoHijo()
+   {
+      return this.documentoHijo;
+   }
+
+   public void setDocumentoHijo(java.lang.Boolean documentoHijo)
+   {
+      this.documentoHijo = documentoHijo;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -534,7 +560,8 @@ public class Documento implements java.io.Serializable
          java.lang.Integer montoVenta, java.lang.Integer valorSeguro,
          java.lang.Integer saldoCte, java.lang.String rol,
          java.lang.Integer idDocOrigen, java.lang.Integer sucursal,
-         java.lang.Integer codBodegaDestino)
+         java.lang.Integer codBodegaDestino, java.lang.Boolean pasoWMS,
+         java.lang.Boolean documentoHijo)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -575,6 +602,8 @@ public class Documento implements java.io.Serializable
       this.idDocOrigen = idDocOrigen;
       this.sucursal = sucursal;
       this.codBodegaDestino = codBodegaDestino;
+      this.pasoWMS = pasoWMS;
+      this.documentoHijo = documentoHijo;
    }
 
 }
