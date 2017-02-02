@@ -121,11 +121,14 @@ public class Documento implements java.io.Serializable
    @org.kie.api.definition.type.Label("codBodegaDestino")
    private java.lang.Integer codBodegaDestino;
 
-   @org.kie.api.definition.type.Label(value = "pasoWMS")
+   @org.kie.api.definition.type.Label("pasoWMS")
    private java.lang.Boolean pasoWMS;
 
-   @org.kie.api.definition.type.Label(value = "documentoHijo")
+   @org.kie.api.definition.type.Label("documentoHijo")
    private java.lang.Boolean documentoHijo;
+
+   @org.kie.api.definition.type.Label(value = "calculoWMS")
+   private java.lang.Integer calculoWMS;
 
    public Documento()
    {
@@ -541,6 +544,16 @@ public class Documento implements java.io.Serializable
       this.documentoHijo = documentoHijo;
    }
 
+   public java.lang.Integer getCalculoWMS()
+   {
+      return this.calculoWMS;
+   }
+
+   public void setCalculoWMS(java.lang.Integer calculoWMS)
+   {
+      this.calculoWMS = calculoWMS;
+   }
+
    public Documento(java.lang.Integer idDocumento, java.lang.Integer codBodega,
          java.lang.String idDespacho, java.lang.Integer montoReservado,
          java.lang.Boolean esKit, java.lang.Integer stock,
@@ -561,7 +574,7 @@ public class Documento implements java.io.Serializable
          java.lang.Integer saldoCte, java.lang.String rol,
          java.lang.Integer idDocOrigen, java.lang.Integer sucursal,
          java.lang.Integer codBodegaDestino, java.lang.Boolean pasoWMS,
-         java.lang.Boolean documentoHijo)
+         java.lang.Boolean documentoHijo, java.lang.Integer calculoWMS)
    {
       this.idDocumento = idDocumento;
       this.codBodega = codBodega;
@@ -604,6 +617,7 @@ public class Documento implements java.io.Serializable
       this.codBodegaDestino = codBodegaDestino;
       this.pasoWMS = pasoWMS;
       this.documentoHijo = documentoHijo;
+      this.calculoWMS = calculoWMS;
    }
 
 }
